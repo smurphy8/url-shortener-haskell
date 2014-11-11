@@ -25,7 +25,16 @@ executable url-shortener
 
 library
   build-depends:       base >=4.7 && <4.8,
-                       containers
+                       binary,
+                       bytestring,
+                       containers,
+                       global-variables,
+                       http-types,
+                       text,
+                       wai,
+                       wai-extra,
+                       warp
+
   exposed-modules:     Shortener
 
 test-suite spec
